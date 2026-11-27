@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#dbdad3", "surface-variant": "#e3e3dc", "secondary-fixed-dim": "#b7cda8", "on-background": "#1b1c18", "on-secondary": "#ffffff", "tertiary-fixed": "#ffddb7", "on-secondary-fixed-variant": "#394c30", "primary-fixed": "#b4f0c5", "error-container": "#ffdad6", "surface-bright": "#fbf9f2", "surface-container-high": "#e9e8e1", "background": "#fbf9f2", "inverse-surface": "#30312c", "on-tertiary-fixed-variant": "#5c4221", "tertiary": "#4f3617", "on-surface": "#1b1c18", "surface-container-lowest": "#ffffff", "secondary": "#506446", "surface-container-low": "#f5f4ed", "outline-variant": "#c0c9bf", "on-error": "#ffffff", "surface-container-highest": "#e3e3dc", "tertiary-fixed-dim": "#e6c096", "primary-fixed-dim": "#99d4aa", "on-primary-fixed": "#00210f", "secondary-fixed": "#d3e9c3", "on-surface-variant": "#404942", "secondary-container": "#d0e7c0", "on-tertiary": "#ffffff", "surface": "#fbf9f2", "tertiary-container": "#684d2b", "on-error-container": "#93000a", "on-primary-fixed-variant": "#175131", "inverse-primary": "#99d4aa", "inverse-on-surface": "#f2f1ea", "on-primary-container": "#98d2a9", "surface-container": "#efeee7", "outline": "#717971", "error": "#ba1a1a", "primary": "#054426", "surface-tint": "#326947", "on-primary": "#ffffff", "on-tertiary-container": "#e5bf95", "on-secondary-fixed": "#0f2008", "primary-container": "#245c3b", "on-tertiary-fixed": "#2a1700", "on-secondary-container": "#54684a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin": "3rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Playfair Display" ], "headline-lg": [ "Playfair Display" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-xl": [ "Playfair Display" ], "title-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "500" } ], "headline-xl": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-secondary-container text-on-secondary-container px-margin-mobile lg:px-margin py-1.5 flex items-center justify-between text-center"><div class="w-full flex items-center justify-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">eco</span><span class="font-label-sm text-label-sm tracking-wide">Preserving Balochistan's Botanical Heritage • A Community &amp; Research Initiative</span></div></div><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="DARMAN Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD3NIk3elOX7St40Y8OPGuBwP9RmM7FiSYDGLd3iIeZ8J6tJbZc5pQKJxnLf_O61gOPSy3ETjBCAgzheXvEFJ2kbzfIL8NKIM6SMYEAiHmmXrd0njhro230ayQqt38r3pFcWMUXuU-Zb32NnEM4McNLd7vZ6CzgvFL5IkDBeLHC7UIyoEQHpFojAOTTrCLwsqf6aePuEYcb7KM8PNX2SxE-Gi6wCN-WEvd3OOrMKpVg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">DARMAN</span><span class="hidden sm:inline-block font-label-sm text-label-sm text-secondary -mt-1">Preserving Nature, Connecting Communities</span></div></div><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-full"><a class="px-3 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="explore-plants" href="#">Explore Plants</a><a class="px-3 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="marketplace" href="#">Marketplace</a><a class="px-3 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contribute-knowledge" href="#">Contribute Knowledge</a><a class="px-3 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-learning" href="#">Research &amp; Learning</a><a aria-current="page" class="px-3 py-1.5 transition-colors bg-primary-container text-on-primary font-semibold rounded-full" data-path="about-us" href="#">About Us</a><a class="px-3 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contact-us" href="#">Contact</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><div class="hidden md:flex items-center bg-surface-container-low px-space-sm py-1 rounded-full text-on-surface-variant gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">translate</span><span class="font-label-sm text-label-sm font-medium">EN / بلوچی / اردو</span></div><a class="hidden sm:inline-flex font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors px-2 py-1" data-path="login" href="#">Login</a><a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-full hover:bg-primary-container transition-colors shadow-sm" data-path="register" href="#">Join DARMAN</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-28 bg-surface min-h-[calc(100vh-28rem)]"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Hero Section -->
+<section class="relative w-full px-margin-mobile lg:px-margin pt-space-lg pb-space-xl overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Overline & Breadcrumb -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">DARMAN Platform</a>
+<span class="text-secondary font-label-sm">/</span>
+<span class="font-label-md text-label-md text-on-surface-variant">About Our Initiative</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          About DARMAN Initiative // Est. 2025
+        </span>
+</div>
+<!-- Hero Statement Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<span class="font-label-lg text-label-lg text-secondary font-medium tracking-wide uppercase">Ecological Stewardship &amp; Digital Commons</span>
+<h1 class="font-headline-xl text-headline-xl text-primary leading-tight">
+            Bridging Ancient Botanical Heritage with Responsible Digital Horizons
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+            Preserving indigenous ecological knowledge, honoring mountain wildcrafters, and building transparent, fair-trade avenues for the botanical treasures of Balochistan.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-3 p-space-md bg-surface-container-low rounded-2xl shadow-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Nagoya Protocol Aligned</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Built on Free, Prior, and Informed Consent (FPIC), safeguarding intellectual property and sovereignty for over 18 regional pastoralist tribes.
+          </p>
+<div class="flex items-center gap-3 pt-2 text-primary font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="font-semibold">44%</span> Landmass</span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1"><span class="font-semibold">600+</span> Endemic Taxa</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Asset Trio -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md pt-space-sm">
+<div class="md:col-span-7 h-72 lg:h-96 rounded-2xl overflow-hidden relative shadow-md">
+<img class="w-full h-full object-cover" data-alt="Elderly Baloch wildcrafter gently harvesting wild herbs in the rugged dry mountainous valleys of Ziarat Balochistan during golden hour sunlight, with misty peaks, earthy slate stones, and silver-green foliage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASbooRET7MrafHIqr-ic-lIizrdHwfJ0SBDbSAJwOfiHraAqLj3t74Tc-aMQyNmsTq2DJc1sjAPxii72AI1Or3j8ctkUYBVBc5Sw5TX4MQM74gOrZqkXViC3GZ3D4sD07xxpWK7CIQqbVBZPUoNLF5a91ZpsZrAXG6E7l-FHMvANdoSDnJ_eQlJ1jAk_YHWRyx415oHYLngbH0Avhrg5ZRkQNtwPMzwqdZZH6Rpuju"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex items-end p-space-lg">
+<div class="flex flex-col text-on-primary">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Field Observation // Ziarat Range</span>
+<span class="font-headline-sm text-headline-sm">Living Memory in High-Altitude Juniper Biomes</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-space-md">
+<div class="h-44 lg:h-48 rounded-2xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Botanist researcher holding a botanical specimen sheet of dried wild thyme Zataria multiflora under warm laboratory lighting with scientific calipers, glass Petri dishes, and handwritten taxonomic tags." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9V-CAhqECogQ0tVajRZJ2B2aes6orKeiTCRsYI7Ya1b0VKcFXXm-SjRDkpcidqakh8Cf3o396ZDfPsDADPsF86-4fHskF-sG7P6vcVMrSfQ1RILj_nv-e_RrfmMAv-Ira2C7rf6QQpp1398hy4REVSX_H6o2NP6KTtQcl4lYq7R_ywSUXSOi-p9bgY1n4dKehEKYIY_mAITu_EDqN4b_cI_ylUsuWTBi1EZylJrVC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 to-transparent flex items-end p-space-md">
+<span class="font-label-md text-label-md text-on-primary font-medium">Taxonomic herbarium specimen accession &amp; phytochemistry</span>
+</div>
+</div>
+<div class="flex-1 bg-surface-container rounded-2xl p-space-md flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+<span class="font-title-md text-title-md">Decentralized Archive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Every documented plant record couples verified botanical taxonomy with recorded voice memos in Brahui, Balochi, and Pashto.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Challenge & Story (Two-Column Editorial) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-[2px] bg-secondary"></span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-secondary font-semibold">Origins &amp; Urgent Need</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-start">
+<!-- Column 1 -->
+<div class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">landscape</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            The Untold Story of Balochistan’s Flora
+          </h2>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Balochistan covers nearly <strong class="text-primary font-semibold">44% of Pakistan’s land area</strong>, yet its botanical wonders remain largely invisible to formal digital sciences. It is an extraordinary convergence zone: barren screes that suddenly yield ancient wild pistachios (<em class="text-secondary italic">Pistacia khinjuk</em>), jagged ridges sheltering aromatic wild thyme (<em class="text-secondary italic">Zataria multiflora</em>), and millennial juniper forests holding ground against desertification.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            For uncounted centuries, knowledge of these drought-hardened, high-potency plants was held orally. It lived in the songs of pastoralists moving flocks along seasonal grazing paths, and in the trusted remedies of elder women who knew precisely which roots could ease pulmonary distress during harsh winter blizzards.
+          </p>
+<div class="p-space-md bg-surface-container rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">nature_people</span>
+<span class="font-label-md text-label-md text-on-surface">Oral ethnobotanical legacy across thousands of years across Chaghi, Kalat, Kohlu, and Ziarat.</span>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px]">balance</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            The Double Challenge: Erasure &amp; Exploitation
+          </h2>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Today, Balochistan’s living botanical patrimony faces a severe dual crisis. First is the silent erosion of memory: as younger generations migrate toward provincial capitals, the nuanced vernacular names, harvest timings, and preparation methods disappear with departed village matriarchs.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Second is economic disenfranchisement. Rural wildcrafters brave treacherous cliff faces and freezing temperatures, only to sell raw herbs to speculative urban middlemen who pocket up to <strong class="text-error font-semibold">80% of final market value</strong>. Lacking price transparency, collectors are forced to uproot entire rootstocks simply to survive, accelerating regional desertification.
+          </p>
+<div class="p-space-md bg-error-container text-on-error-container rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-[28px]">trending_down</span>
+<span class="font-label-md text-label-md">Middlemen exploitation + unguided overharvesting = cultural loss &amp; habitat collapse.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How DARMAN Operates (Socio-Technological Bridge) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-2 max-w-2xl">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-secondary font-semibold">The Infrastructure</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            How DARMAN Operates as a Living Bridge
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          We combine ethnobotanical field research with lightweight mobile registries and direct-to-buyer fair commerce.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Bridge 1 -->
+<div class="flex flex-col gap-space-md p-space-lg bg-surface-container rounded-2xl relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">Phase 01 // Digital Documentation</span>
+<h3 class="font-headline-md text-headline-md text-primary">Open Taxonomic Registry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Cataloging endemic species with high-definition digital macro-photography, verified GPS habitat ranges, vernacular nomenclature (Balochi, Brahui, Pashto, Urdu), and authenticated chemical profiles.
+          </p>
+<div class="pt-2 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">library_books</span>
+            Indexed with University of Balochistan Herbarium
+          </div>
+</div>
+<!-- Bridge 2 -->
+<div class="flex flex-col gap-space-md p-space-lg bg-surface-container rounded-2xl relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">Phase 02 // Governance &amp; Ethics</span>
+<h3 class="font-headline-md text-headline-md text-primary">Nagoya Protocol &amp; PIC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Prior Informed Consent (PIC) protocols guarantee that village communities maintain sovereign ownership over ethnobotanical wisdom, preventing biopiracy and unauthorized patent extraction.
+          </p>
+<div class="pt-2 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+            Equitable Benefit Sharing Framework
+          </div>
+</div>
+<!-- Bridge 3 -->
+<div class="flex flex-col gap-space-md p-space-lg bg-surface-container rounded-2xl relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">storefront</span>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">Phase 03 // Commerce</span>
+<h3 class="font-headline-md text-headline-md text-primary">Direct Market Transparency</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Eliminating extractive broker networks. Verified wildcrafter cooperatives list dried botanical yields directly to vetted pharmacies, educational laboratories, and conscious wellness institutions.
+          </p>
+<div class="pt-2 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+            Batch Origin &amp; Harvester Traceability
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Large Paired Mission & Vision Cards -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-lg">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Mission Card -->
+<div class="bg-primary text-on-primary p-space-xl rounded-3xl flex flex-col justify-between gap-space-lg relative overflow-hidden shadow-lg">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            Our Central Mission
+          </span>
+<span class="material-symbols-outlined text-secondary-fixed text-[36px]">flag</span>
+</div>
+<div class="flex flex-col gap-space-md my-auto">
+<h3 class="font-headline-lg text-headline-lg text-surface leading-snug">
+            “To preserve the botanical heritage of Balochistan through digital innovation while creating dignified, sustainable economic opportunities for local communities.”
+          </h3>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            We exist at the intersection of cultural documentation, regenerative wildcrafting guidelines, and economic sovereignty for mountainous rural harvesters.
+          </p>
+</div>
+<div class="flex items-center gap-4 text-secondary-fixed font-label-sm text-label-sm pt-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Indigenous Dignity</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Regenerative Yields</span>
+</div>
+</div>
+<!-- Vision Card -->
+<div class="bg-surface-container-high text-on-surface p-space-xl rounded-3xl flex flex-col justify-between gap-space-lg relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            Our Long Horizon
+          </span>
+<span class="material-symbols-outlined text-primary text-[36px]">visibility</span>
+</div>
+<div class="flex flex-col gap-space-md my-auto">
+<h3 class="font-headline-lg text-headline-lg text-primary leading-snug">
+            “To build a connected, participatory digital ecosystem where indigenous botanical knowledge is safeguarded, biodiversity thrives through regenerative harvesting, and rural wildcrafters receive equitable returns.”
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            A future where no plant species vanishes unrecorded, and no rural grandmother’s medicinal formulation is patented away from the clan who protected it across generations.
+          </p>
+</div>
+<div class="flex items-center gap-4 text-secondary font-label-sm text-label-sm pt-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Open Access Archives</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Equitable Value Chains</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Objectives (4 Visual Cards with Icon Pills) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center gap-2 max-w-2xl mx-auto">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-secondary font-semibold">Strategic Roadmaps</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Four Core Objectives</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Tangible deliverables translating high-level vision into community-rooted reality across Balochistan.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Objective 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">01</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Preservation</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mt-2">Knowledge Digitization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Systematic recording of folklore remedies, regional vernacular nomenclature, and oral preparations before elder practitioners depart.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+            Audio oral archives &amp; folklore logs
+          </div>
+</div>
+<!-- Objective 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">02</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Verification</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mt-2">Scientific Validation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Collaboration with universities and plant taxonomists to authenticate voucher herbarium specimens, molecular markers, and bio-active active compounds.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+            Voucher specimens &amp; GC-MS profiling
+          </div>
+</div>
+<!-- Objective 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">03</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Empowerment</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mt-2">Community Inclusion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Empowering rural women collectors and nomadic families with simple voice-enabled mobile tools and community field stations.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">groups_3</span>
+            Women wildcrafter circles
+          </div>
+</div>
+<!-- Objective 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">04</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Trade Equity</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mt-2">Fair Market Channels</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Setting baseline guaranteed prices, verified botanical origin receipts, and direct buyer linkages to bypass coercive loan rings.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">currency_exchange</span>
+            100% auditable transparent payouts
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Visual Highlight Banner: Three Pillars -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto bg-primary text-on-primary rounded-3xl p-space-lg lg:p-space-xl relative overflow-hidden shadow-xl">
+<!-- Subtle Decorative Background Glow -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-2 max-w-2xl">
+<span class="font-label-md text-label-md text-secondary-fixed uppercase tracking-widest font-semibold">The DARMAN Framework</span>
+<h2 class="font-headline-xl text-headline-xl text-surface">Preservation, Connection, and Opportunity</h2>
+<p class="font-body-md text-body-md text-on-primary-container">
+            A cohesive three-part model designed to protect vulnerable ecosystems while empowering the people who nurture them.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="bg-primary-container/60 backdrop-blur-sm p-space-lg rounded-2xl flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">
+              1
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-surface">PRESERVATION</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+              Safeguarding endangered species like ancient <em class="italic text-secondary-fixed">Juniperus excelsa</em>, <em class="italic text-secondary-fixed">Caralluma tuberculata</em>, and wild <em class="italic text-secondary-fixed">Zataria multiflora</em> through community-enforced rotational harvesting guidelines, seasonal no-take zones, and local seed banking.
+            </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-primary-container/60 backdrop-blur-sm p-space-lg rounded-2xl flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">
+              2
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-surface">CONNECTION</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+              Uniting university botanical laboratories, pastoral wildcrafting clans, herbal formulators, and conscious global apothecaries into an open, collaborative dialogue rooted in reciprocity rather than extraction.
+            </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-primary-container/60 backdrop-blur-sm p-space-lg rounded-2xl flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">
+              3
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-surface">OPPORTUNITY</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+              Returning <strong class="text-surface font-semibold">85% to 92% of gross market value</strong> directly to harvester families, financing village solar cold-storage, clean drinking water wells, and community schools in remote mountainous areas.
+            </p>
+</div>
+</div>
+<!-- Banner Metric Footer -->
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-space-md border-t border-primary-container/40">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[28px]">eco</span>
+<span class="font-label-md text-label-md text-on-primary-container">30% Minimum Flowering Crown Retention strictly audited per harvested batch.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold tracking-wide">Live Regenerative Harvest Standard V2.4 Active</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Who Benefits? (Stakeholder Grid with 6 Cards) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-2 max-w-2xl">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-secondary font-semibold">Inclusive Beneficiaries</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Who Benefits from DARMAN?</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          A multi-tiered ecosystem structured so that every link in the botanical value chain experiences tangible growth and respect.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Beneficiary 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col gap-space-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">hiking</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Wildcrafters &amp; Pastoralists</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Guaranteed minimum pricing, mobile payment disbursals, free seasonal wildcrafting kits, and official attribution as recognized botanical contributors.
+          </p>
+</div>
+<!-- Beneficiary 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col gap-space-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">diversity_1</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Women’s Harvesting Circles</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Direct economic independence through community-run drying, sorting, and packaging cooperatives that keep value addition inside village borders.
+          </p>
+</div>
+<!-- Beneficiary 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col gap-space-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">local_pharmacy</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Local Herbalists &amp; SMEs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Reliable access to verified, unadulterated high-grade herbs without having to pay arbitrary markups to black-market commodity brokers.
+          </p>
+</div>
+<!-- Beneficiary 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col gap-space-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Researchers &amp; Students</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Open-access geo-referenced datasets, herbarium voucher catalog links, and verified botanical field samples for phytochemical and genomic studies.
+          </p>
+</div>
+<!-- Beneficiary 5 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col gap-space-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">public</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Conscious Global Buyers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Complete supply-chain transparency, organic certification logs, and laboratory verified purity for high-value botanical extracts and teas.
+          </p>
+</div>
+<!-- Beneficiary 6 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl flex flex-col gap-space-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">park</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Future Ecosystems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Erosion prevention through sustainable root preservation, native seed dispersal, and continuous multi-generational biodiversity stewardship.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Measurable Impact Framework (Social, Environmental & Economic) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-2 max-w-2xl">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-secondary font-semibold">Verification &amp; Governance</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Measurable Impact Framework</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We gauge success not by extractive trade volumes, but by ecological longevity and community autonomy.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Social Impact -->
+<div class="p-space-lg bg-surface-container rounded-2xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-semibold">Social Metrics</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">favorite</span>
+</div>
+<!-- Inline SVG Progress Radial Graphic -->
+<div class="flex items-center gap-4 py-2">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="font-title-md font-bold text-center" fill="#054426" font-size="8" text-anchor="middle" x="18" y="20.5">88%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1,240+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harvesters Registered with Full Attribution</span>
+</div>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>100% of cultural recipes attributed to originating clan and locale.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Audio recordings preserved in native Balochi and Brahui dialects.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Free health screening camps for seasonal nomadic collectors.</span>
+</li>
+</ul>
+</div>
+<!-- Environmental Impact -->
+<div class="p-space-lg bg-surface-container rounded-2xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-semibold">Environmental Metrics</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">forest</span>
+</div>
+<!-- Inline SVG Progress Radial Graphic -->
+<div class="flex items-center gap-4 py-2">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="font-title-md font-bold text-center" fill="#506446" font-size="8" text-anchor="middle" x="18" y="20.5">94%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">14,800 Ha</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Under Rotational Harvest Protection</span>
+</div>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Zero-uprooting policy enforced for taproot perennial species.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>30%+ flowering crown retention for natural seed dispersal.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Establishment of 4 native wild seed preservation sanctuaries.</span>
+</li>
+</ul>
+</div>
+<!-- Economic Impact -->
+<div class="p-space-lg bg-surface-container rounded-2xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-semibold">Economic Metrics</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">payments</span>
+</div>
+<!-- Inline SVG Progress Radial Graphic -->
+<div class="flex items-center gap-4 py-2">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="89, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="font-title-md font-bold text-center" fill="#4f3617" font-size="8" text-anchor="middle" x="18" y="20.5">89%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">3.2x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Average Harvester Income Increase</span>
+</div>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Elimination of multi-tiered predatory middleman cuts.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Immediate mobile escrow payouts upon batch purity verification.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Income stability for rural families during freezing winter months.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Photographic Collage Section: The Living Landscape -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-md">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-4 h-64 rounded-2xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Sun-dried wild medicinal wild mountain tea and herbs drying naturally on hand-woven palm leaf mats in a clean rural courtyard under the clear desert blue skies of Balochistan." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiCT2c6haFMayf0LSPZlUCI26JFEfk5jFa21MyWMHj8-cmC8K088h8DYDfjH0v-SnDeF2SdLryJnGCNkq7TwvialSl8pbPDtFykECP-UxYBKwN8sv9C8ftarXOI22j3pzCNr9AJPF9-bQbHkWLBWCqCFbo5TwqyblVZun4928VCkY36zC0B3ClunkDlppW6YhSkXT3mVWFBpzEJOypOBrGS7P8i8G4JS4fiYapePKM"/>
+<div class="absolute inset-0 bg-primary/20 hover:bg-transparent transition-colors"></div>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-primary font-label-sm text-label-sm font-semibold">
+          Solar Dehydration Stations
+        </div>
+</div>
+<div class="md:col-span-4 h-64 rounded-2xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="University researcher examining a fresh botanical specimen of wild Peganum harmala using digital microscope optics in a university laboratory in Quetta with clean lab glass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiGEGDoaRy38DYdh_70lERYb1HtndTZhQxUnUFa_YL1iOBmuDbXwH6S2ad1nSS5t9OOEa61n183HaUQulBV8P2MUcy0__TPzkMy1-CWHDvSATzMOlJeQ5tJphEPVMcBBL2ZGoHzWSpZJdNEM1Ez9hIkeAi6SdvvuX2GYRdBWx_PyMztN807a-3zSjn2IhjDvIwgp5eLTQGER5QtlzzLVP7jeueFYqCTnTibfs9Asxa"/>
+<div class="absolute inset-0 bg-primary/20 hover:bg-transparent transition-colors"></div>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-primary font-label-sm text-label-sm font-semibold">
+          Phytochemical Authentication
+        </div>
+</div>
+<div class="md:col-span-4 h-64 rounded-2xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Scenic panoramic wide view of ancient high-altitude juniper forest on dry limestone mountain ridges in Ziarat Balochistan under morning golden light with clouds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpMnXHKKXnehS9g5pcH_Vo9RD9wtHc0TJ92Y5ayQKWqr03AddhCZ7xI6AhVx3DLsRnC6_NcwgRldeaYxQin8Nfl3QdDGvjJIPuPRXq-J0nRmEavZJHpe6SmvARxClKTw3GFdCAeJDYzfERgLsZv7Qmg2pFZpbBQebClcT-VWXrGKmP1VO6Z-_Ht6jzgBkQJVv4R-IzGNO1elvtby5HPS3damwzHbKa7USqZFZl7HI7"/>
+<div class="absolute inset-0 bg-primary/20 hover:bg-transparent transition-colors"></div>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-primary font-label-sm text-label-sm font-semibold">
+          Ziarat Biosphere Reserve
+        </div>
+</div>
+</div>
+</section>
+<!-- Call to Action Banner & Institutional Disclaimer -->
+<section class="w-full px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+<div class="max-w-7xl mx-auto bg-surface-container rounded-3xl p-space-lg lg:p-space-xl flex flex-col gap-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-2 max-w-2xl text-center lg:text-left">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">Participate in the Living Archive</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Join Us in Preserving Living Heritage</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Whether you are a university botanical researcher, an apothecary formulator, or someone passionate about indigenous wisdom, there is a place for your voice in DARMAN.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-sm shrink-0">
+<a class="px-6 py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary-container transition-colors shadow-sm inline-flex items-center gap-2" data-path="explore-plants" href="#">
+<span>Explore the Plant Directory</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-6 py-3 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg font-semibold hover:bg-surface-variant transition-colors shadow-sm inline-flex items-center gap-2" data-path="contact-us" href="#">
+<span>Partner With Us</span>
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+</a>
+</div>
+</div>
+<!-- Institutional Research Note -->
+<div class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+<span class="font-label-sm text-label-sm">Academic Prototype &amp; Botanical Heritage Initiative // University of Balochistan Collaboration</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Creative Commons Attribution-NonCommercial (CC BY-NC 4.0)</span>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low pt-space-xl pb-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-sm"><div class="flex items-center gap-space-md"><img alt="DARMAN Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD3NIk3elOX7St40Y8OPGuBwP9RmM7FiSYDGLd3iIeZ8J6tJbZc5pQKJxnLf_O61gOPSy3ETjBCAgzheXvEFJ2kbzfIL8NKIM6SMYEAiHmmXrd0njhro230ayQqt38r3pFcWMUXuU-Zb32NnEM4McNLd7vZ6CzgvFL5IkDBeLHC7UIyoEQHpFojAOTTrCLwsqf6aePuEYcb7KM8PNX2SxE-Gi6wCN-WEvd3OOrMKpVg"/><span class="font-headline-sm text-headline-sm text-primary font-semibold">DARMAN</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Preserving indigenous botanical knowledge, empowering local wildcrafters and rural harvesters, and connecting conscious markets to authentic, traceable natural flora across Balochistan.</p><div class="flex items-center gap-space-sm text-secondary"><span class="material-symbols-outlined text-[20px]">pin_drop</span><span class="font-label-md text-label-md">Quetta, Balochistan, Pakistan</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Platform Resources</span><div class="flex flex-col gap-2 font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="explore-plants" href="#">Explore Plants Directory</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="marketplace" href="#">Botanical Marketplace</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="become-supplier" href="#">Become a Harvester / Supplier</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="contribute-knowledge" href="#">Contribute Traditional Knowledge</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="research-learning" href="#">Research &amp; Herbarium Archive</a></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Initiative</span><div class="flex flex-col gap-2 font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="about-us" href="#">About Us</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="contact-us" href="#">Contact &amp; Field Stations</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="terms" href="#">Terms of Use</a></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Direct Contact</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Inquiries regarding collaborative research, taxonomic validation, and ethical fair-trade supply partnerships.</p><div class="flex flex-col gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">mail</span>contact@darman-balochistan.org</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">call</span>+92 (81) 283-4910</span></div></div></div><div class="py-space-md bg-surface-container rounded-xl px-space-md mb-space-lg"><p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed text-center sm:text-left"><strong class="text-primary font-semibold">Important Botanical &amp; Medical Disclaimer:</strong> DARMAN is a digital initiative focused on botanical knowledge preservation, community participation and responsible market connections. All medicinal information is documented cultural heritage and educational material, not a substitute for clinical advice.</p></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-sm font-label-sm text-label-sm text-on-surface-variant"><p>© 2025 DARMAN Botanical Platform. All rights reserved.</p><p class="text-secondary font-medium">Balochistan Flora Heritage Initiative • Demonstration &amp; Research Prototype</p></div></div></footer></body></html>
